@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/message.css" />
+    <title>Message</title>
+</head>
+<body>
+    <div id="heading_box">
+        <a href="/"><img src="/back.png" /></a> 
+        Message Details
+    </div>
+    <div id="details_box">
+        <div class="detail_item">
+            <h1 class="detail_label">User:</h1>
+            <p class="detail_text"><%= message.user %></p>
+        </div>
+        <div class="detail_item">
+            <h1 class="detail_label">Message:</h1>
+            <p class="detail_text"><%= message.text %></p>
+        </div>
+        <div class="detail_item">
+            <h1 class="detail_label">Date and Time added:</h1>
+            <p class="detail_text"><%= message.added %></p>
+        </div>
+    </div>
+</body>
+</html>
