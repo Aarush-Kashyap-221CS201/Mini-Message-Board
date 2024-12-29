@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express=require('express');
 const app=express();
 
@@ -13,7 +15,7 @@ app.use(express.static(assetsPath));
 const indexRouter=require('./routes/indexRouter');
 app.use("/",indexRouter);
 
-const PORT=3000;
+const PORT=process.env.PORT;
 app.listen(PORT,()=>{
     console.log(`Server started! Address: localhost:${PORT}`);
 })
